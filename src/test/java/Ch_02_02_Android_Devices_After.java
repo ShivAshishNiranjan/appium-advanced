@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Ch_02_02_Android_Devices_After {
     private static final String APP_ANDROID = "https://github.com/cloudgrey-io/the-app/releases/download/v1.9.0/TheApp-v1.9.0.apk";
     private static final String APPIUM = "http://localhost:4723/wd/hub";
-    private static final String DEVICE_ID = "?";
+    private static final String DEVICE_ID = "25e5ce20ca1c7ece";
 
     private AndroidDriver driver;
 
@@ -21,8 +21,8 @@ public class Ch_02_02_Android_Devices_After {
     public void setUp() throws Exception {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
-        caps.setCapability("platformVersion", "9");
-        caps.setCapability("deviceName", "Android Emulator");
+        caps.setCapability("platformVersion", "10");
+        caps.setCapability("deviceName", "SAN NOTE 9");
         caps.setCapability("automationName", "UiAutomator2");
         caps.setCapability("app", APP_ANDROID);
         caps.setCapability("udid", DEVICE_ID);
